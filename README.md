@@ -1,21 +1,51 @@
 # github-topic-checker
 
-A simple multi-threaded Python script to quickly check and filter GitHub topics/tags from a text file.
+A simple multi-threaded Python tool to check and filter GitHub topics/tags from a text file.
 
-It sorts topics into 3 categories:
-- 🟢 **Active** — topic exists and has public repositories.
-- 🟡 **Empty** — topic exists, but currently has 0 repositories.
-- 🔴 **Banned** — topic is banned or deleted (HTTP 404).
+It automatically sorts topics into 3 categories:
+- 🟢 **Active** — Topic exists and has public repositories.
+- 🟡 **Empty** — Topic exists, but currently has 0 repositories.
+- 🔴 **Banned** — Topic is banned or deleted (HTTP 404).
 
 ## Features
-- Multi-threaded (fast checking)
-- Colorized console UI
-- Rate limit prevention
-- Automatically saves output into 3 separate text files
+- ⚡ **Multi-threaded** — Fast checking with custom thread pool.
+- 🎨 **Clean Console UI** — Colorized status display and progress tracking.
+- 🛡️ **Rate-Limit Safe** — Built-in delays to avoid HTTP 429 errors.
+- 💾 **Auto-Save** — Instant output generation to separate text files.
 
-## How to use
+## Quick Start
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/MrMoxxx/github-topic-checker.git
-   cd github-topic-checker
+1. **Clone the repository:**
+```bash
+git clone https://github.com/YOUR_USERNAME/github-topic-checker.git
+cd github-topic-checker
+```
+
+2. **Install requirements:**
+```bash
+pip install requests
+```
+
+3. **Add your topics to `topics.txt` (one per line):**
+```text
+python
+javascript
+rust-cheat-esp
+malware
+```
+
+4. **Run the script:**
+```bash
+python checker.py
+```
+
+## Output Files
+
+The results will be automatically saved into three separate files:
+- `active_topics.txt` — Active topics with existing repositories.
+- `empty_topics.txt` — Active topics with 0 repositories.
+- `banned_topics.txt` — Banned, deleted, or 404 topics.
+
+## License
+
+MIT
