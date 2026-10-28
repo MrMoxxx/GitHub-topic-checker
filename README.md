@@ -29,9 +29,8 @@ pip install requests
 3. **Add your topics to `topics.txt` (one per line):**
 ```text
 python
-javascript
-rust-cheat-esp
-malware
+cheat
+hdwaudbwuaydbw
 ```
 
 4. **Run the script:**
