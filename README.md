@@ -1,4 +1,7 @@
-# github-topic-checker
+# github topic checker
+
+<img width="534" height="279" alt="image" src="https://github.com/user-attachments/assets/6c3a6df0-8103-4487-912d-7eac21a3f47f" />
+
 
 A simple multi-threaded Python tool to check and filter GitHub topics/tags from a text file.
 
